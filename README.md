@@ -15,7 +15,7 @@ An interactive and educational Periodic Table built using **HTML, CSS, and JavaS
 
 ## Live Demo
 Check out the interactive table here:  
-[https://AbdullahBinFaisal-git.github.io/Interactive-Periodic-Table/](https://AbdullahBinFaisal-git.github.io/Interactive-Periodic-Table/)
+[https://abdullahbinfaisal-git.github.io/Interactive-Periodic-Table/](https://abdullahbinfaisal-git.github.io/Interactive-Periodic-Table/)
 
 ## Usage
 1. Click on any element to view details.  
