@@ -1,0 +1,131 @@
+/* ---------- Global Styles ---------- */
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    background-color: #f4f7f9;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* ---------- Dark Mode ---------- */
+body.dark-mode {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* ---------- Controls ---------- */
+.controls {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    max-width: 1400px;
+    margin: 20px auto;
+}
+
+#searchInput, #categoryFilter, #darkModeToggle {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+#darkModeToggle {
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+}
+
+/* ---------- Periodic Table ---------- */
+#periodicTable {
+    display: grid;
+    grid-template-columns: repeat(18, 1fr);
+    gap: 3px;
+    max-width: 1400px;
+    margin: auto;
+}
+
+/* ---------- Element Tiles ---------- */
+.element-tile {
+    height: 90px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 5px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.2s;
+}
+
+.element-tile:hover {
+    transform: scale(1.08);
+    z-index: 10;
+}
+
+/* ---------- Tile Content ---------- */
+.atomic-number {
+    font-size: 0.75em;
+    align-self: flex-start;
+}
+
+.symbol {
+    font-size: 2.2em;
+    font-weight: bold;
+}
+
+.name {
+    font-size: 0.6em;
+}
+
+/* ---------- Categories ---------- */
+.category-alkali-metal { background: #ffb3b3; }
+.category-alkaline-earth-metal { background: #ffdb80; }
+.category-transition-metal { background: #c9e6ff; }
+.category-post-transition-metal { background: #8ce1b5; }
+.category-metalloid { background: #79d2b2; }
+.category-nonmetal { background: #b0c4de; }
+.category-halogen { background: #ccccff; }
+.category-noble-gas { background: #e0b0ff; }
+.category-lanthanide { background: #fffacd; }
+.category-actinide { background: #ffe4c4; }
+
+/* ---------- Tooltip ---------- */
+.tooltip {
+    position: fixed;
+    background: rgba(30, 30, 30, 0.95);
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* ---------- Modal ---------- */
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+}
+
+.modal-content {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 500px;
+    margin: 10% auto;
+}
+
+.close-button {
+    float: right;
+    cursor: pointer;
+    font-size: 28px;
+
